@@ -1,0 +1,23 @@
+#product-section-main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  .product-section-title-parent {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem 3rem;
+    
+    .product-title {
+      font-weight: bold;
+    }
+  }
+
+  .show-products-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 4px;
+  }
+}

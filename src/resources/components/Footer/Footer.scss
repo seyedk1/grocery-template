@@ -1,0 +1,82 @@
+#footer-main {
+  display: flex;
+  padding: 1rem;
+  background-color: #f8f8f8;
+
+  .footer-up-parent {
+    display: flex;
+    flex: 1;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 10px;
+    margin-top: 10px;
+
+    .common-class {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .fast-cart-logo-parent {
+      padding-top: 0;
+
+      .logo-parent {
+        display: flex;
+        justify-content: center;
+
+        .logo-image-style {
+          display: flex;
+          flex: 0.5;
+        }
+      }
+
+      .text-parent {
+        display: flex;
+        justify-content: center;
+
+        .text-content {
+          font-size: 17px;
+        }
+      }
+
+      .social-media-parent {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .footer-columns-parent {
+      display: flex;
+      flex-direction: column;
+
+      .title-parent {
+        display: flex;
+        justify-content: flex-start;
+
+        .title {
+          //   font-size: 18px;
+          font-weight: bold;
+          color: #222;
+        }
+      }
+
+      .elements-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .each-element {
+          display: flex;
+          justify-content: center;
+          margin: 10px 0;
+          color: #4a5568;
+          font-size: 15px;
+          align-items: center;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .footer-down-parent {
+    display: flex;
+  }
+}

@@ -1,0 +1,31 @@
+#advertisement-main {
+  display: flex;
+  flex: 0.04;
+  background-color: #0aaf9a;
+  padding: 5px;
+
+  .background-advertisement {
+    display: flex;
+    flex: 1;
+
+    .advertise-text-parent {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+
+      .advertise-text {
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    .advertise-close {
+      display: flex;
+      justify-content: flex-end;
+      font-weight: bold;
+      color: white;
+      padding-left: 10px;
+    }
+  }
+}

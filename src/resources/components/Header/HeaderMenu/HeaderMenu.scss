@@ -1,0 +1,48 @@
+#menu-items-main {
+  display: flex;
+  justify-content: flex-start;
+  flex: 0.1;
+  margin: 1rem 4rem;
+
+  .category-text-parent {
+    display: flex;
+    flex: 0.15;
+    position: relative;
+    align-items: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      background-color: #ececec;
+      top: 0;
+      left: 3rem;
+    }
+
+    .category-text--icon {
+      position: relative;
+      font-size: 19px;
+      color: #222;
+    }
+  }
+
+  .menu-items-parent {
+    display: flex;
+    flex: 0.3;
+    align-items: center;
+
+    .menu-items {
+      display: flex;
+      list-style: none;
+      flex: 1;
+      justify-content: flex-start;
+
+      .menu-item {
+        margin: 0 30px;
+        font-size: 19px;
+        color: #222;
+      }
+    }
+  }
+}
