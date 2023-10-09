@@ -1,6 +1,6 @@
 <template>
   <div id="product-card-main">
-    <div class="product-card">
+    <div class="product-card"  :class="{ 'product-card-shop': $route.name === 'shop' }">
       <div class="product-image-parent">
         <v-img
           height="100"
@@ -24,10 +24,13 @@
         </div>
 
         <div class="product-price-parent my-1">
-          <h5 class="product-price">{{product.price}} تومن</h5>
+          <h5 class="product-price">{{ product.price }} تومن</h5>
         </div>
 
-        <div class="cart--qty-parent my-1">
+        <div
+          class="cart--qty-parent my-1"
+          :class="{ 'cart--qty-parent-shop': $route.name === 'shop' }"
+        >
           <div class="qty-parent">
             <div class="qty-right-minus">
               <span class="mdi mdi-minus"></span>
