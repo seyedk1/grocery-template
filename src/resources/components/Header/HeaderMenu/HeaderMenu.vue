@@ -5,16 +5,21 @@
         class="category-text--icon"
         prepend-icon="mdi mdi-shape-outline"
         variant="text"
-      
       >
         دسته بندی
       </v-btn>
     </div>
     <div class="menu-items-parent">
       <ul class="menu-items">
-        <li class="menu-item" v-for="(item, index) in menuItems" :key="index">
-          {{ item }}
-        </li>
+        <router-link
+          tag="li"
+          class="menu-item"
+          v-for="(item, index) in menuItems"
+          :to="{ name: item.to.name }"
+          :key="index"
+        >
+          {{ item.name }}
+        </router-link>
       </ul>
     </div>
   </div>

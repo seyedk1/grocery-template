@@ -4,7 +4,16 @@ import { mdiShapeOutline } from "@mdi/js";
 
 export default {
   setup() {
-    const menuItems = reactive(["صفحه اصلی", "فروشگاه"]);
+    const menuItems = reactive([
+      {
+        name: "صفحه اصلی",
+        to: { name: "home" },
+      },
+      {
+        name: "فروشگاه",
+        to: { name: "shop" },
+      },
+    ]);
     const path = ref(mdiShapeOutline);
     return {
       menuItems,
