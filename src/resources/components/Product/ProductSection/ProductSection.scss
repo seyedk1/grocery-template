@@ -3,6 +3,10 @@
   flex-direction: column;
   padding: 1rem;
 
+  .product-section-title-parent-shop{
+    display: none !important;
+  }
+
   .product-section-title-parent {
     display: flex;
     justify-content: flex-start;
@@ -19,5 +23,9 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 4px;
+  }
+
+  .show-products-section-shop{
+    justify-content: center !important;
   }
 }

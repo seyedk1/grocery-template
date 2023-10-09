@@ -10,5 +10,5 @@
   </div>
 </template>
 
-<style src="./home.scss" lang="scss" scoped></style>
+<style src="./home.scss" lang="scss"></style>
 <script src="./home.js"></script>
