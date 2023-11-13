@@ -1,0 +1,121 @@
+@import "/src/assets/sass/variable";
+
+#profile-main {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 3rem;
+
+  .profile-dashboard-parent {
+    display: flex;
+    flex: 0.23;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    height: fit-content;
+
+    .background-image-dashboard {
+      background-image: url("/src/assets/images/profile/cover-img.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 4rem 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .user-info-parent {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      margin-top: -60px;
+      border-bottom: 1px solid #ececec;
+      border-width: 1px;
+
+      .user-image-parent {
+        display: flex;
+        align-self: center;
+
+        .user-image {
+          .v-img__img--contain {
+            border-radius: 100%;
+            background-color: $white;
+            padding: 7px;
+            width: fit-content;
+          }
+        }
+      }
+
+      .user-family-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+
+        .user-name {
+          font-weight: 600;
+        }
+
+        .user-email {
+          color: $RiverBed;
+        }
+      }
+    }
+
+    .profile-dashboard-items-parent {
+      display: flex;
+
+      .items-parent {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .each-item {
+          display: flex;
+          flex: 1;
+          align-items: center;
+          color: $RiverBed;
+          font-size: 19px;
+          margin: 10px 0;
+          padding: 5px 10px;
+
+          .icon-style {
+            margin-left: 10px;
+          }
+
+          &.active {
+            background-color: #e4eeec;
+            border-right: 3px solid $Niagara;
+            color: $Niagara;
+
+            .icon-style {
+              color: $Niagara;
+            }
+          }
+        }
+
+        // .item-active{
+        //   color: $Niagara;
+        // }
+      }
+    }
+  }
+
+  .profile-show-content-parent {
+    display: flex;
+    flex: 0.7;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: $Alabaster;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+
+    .btn-parent {
+      .btn-style {
+        background-color: $Niagara;
+        color: $white;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+}
