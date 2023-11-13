@@ -1,76 +1,76 @@
 #header-main {
+  display: flex;
+  flex: 0.1;
+  border-bottom: 1px solid #ececec;
+
+  .header-logo-parent {
     display: flex;
-    flex: 0.1;
-    border-bottom: 1px solid #ececec;
-  
-    .header-logo-parent {
+    flex: 0.2;
+    justify-content: center;
+
+    .logo-image-style {
       display: flex;
-      flex: 0.2;
+      flex: 0.5;
       justify-content: center;
-  
-      .logo-image-style {
-        display: flex;
-        flex: 0.5;
-        justify-content: center;
+    }
+  }
+
+  .search-parent {
+    display: flex;
+    flex: 0.6;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+
+    .placeholder-color-style {
+      flex: 0.8;
+
+      &::placeholder {
+        color: #4a5568 !important;
+      }
+
+      .v-autocomplete input[type="text"] {
+        border: 1px solid #ced4da; /* Change this to your desired border style */
+        border-radius: 0.25rem; /* You can adjust the border radius as well */
       }
     }
-  
-    .search-parent {
+  }
+
+  .icons--language-parent {
+    display: flex;
+    flex: 0.2;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .ul-icons {
       display: flex;
-      flex: 0.6;
-      justify-content: center;
-      align-items: center;
-      padding-top: 15px;
-  
-      .placeholder-color-style {
-        flex: 0.8;
-  
-        &::placeholder {
-          color: #4a5568 !important;
+      flex: 1;
+      justify-content: space-around;
+      list-style: none;
+
+      .icons-style-li {
+        position: relative;
+        cursor: pointer;
+
+        .icon-style {
+          border: 1px solid #ececec;
+          border-radius: 50%;
+          padding: 12px;
         }
-  
-        .v-autocomplete input[type="text"] {
-          border: 1px solid #ced4da; /* Change this to your desired border style */
-          border-radius: 0.25rem; /* You can adjust the border radius as well */
-        }
-      }
-    }
-  
-    .icons--language-parent {
-      display: flex;
-      flex: 0.2;
-      justify-content: space-evenly;
-      align-items: center;
-  
-      .ul-icons {
-        display: flex;
-        flex: 1;
-        justify-content: space-around;
-        list-style: none;
-  
-        .icons-style-li {
-          position: relative;
-  
-          .icon-style {
-            border: 1px solid #ececec;
-            border-radius: 50%;
-            padding: 12px;
-          }
-  
-          &:not(:last-child)::after {
-            content: "";
-            position: absolute;
-            height: 80%;
-            width: 1px;
-            background-color: #ececec;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-            right: unset;
-            left: -27px;
-          }
+
+        &:not(:last-child)::after {
+          content: "";
+          position: absolute;
+          height: 80%;
+          width: 1px;
+          background-color: #ececec;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          right: unset;
+          left: -27px;
         }
       }
     }
   }
-  
+}
