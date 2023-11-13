@@ -1,0 +1,58 @@
+@import "/src/assets/sass/variable";
+
+.address-card-parent {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 10px;
+
+  .address-card-content {
+    display: flex;
+    flex: 0.5;
+    background-color: #fff;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin: 10px 5px;
+    padding: 15px;
+
+    .radio-card {
+      display: contents;
+    }
+
+    .details-parent {
+      display: flex;
+      flex-direction: column;
+      flex: 0.8;
+      list-style: none;
+
+      .each-info {
+        margin: 5px;
+        font-size: 16px;
+
+        .each-info-value {
+          color: #4a5568;
+          padding-right: 5px;
+        }
+      }
+
+      .detail-title {
+        font-size: 20px;
+      }
+    }
+
+    .label-parent {
+      display: flex;
+      flex: 0.2;
+      justify-content: center;
+      height: fit-content;
+      margin: 10px;
+
+      .label-text {
+        background-color: $Niagara;
+        padding: 2px 10px;
+        color: $white;
+        border-radius: 5px;
+      }
+    }
+  }
+}
