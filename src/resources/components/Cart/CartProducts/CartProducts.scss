@@ -1,0 +1,159 @@
+@import "src/assets/sass/variable";
+
+.cart-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: $Alabaster;
+//   border: 1px solid #ececec;
+  border-radius: 5px;
+
+  .each-cart-row {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    border-bottom: 1px solid #ececec;
+    padding: 5px 0;
+
+    .each-row-element-parent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .element-image--details-parent {
+        display: flex;
+
+        .image-parent {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+        }
+
+        .element-details-parent {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin-right: 25px;
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            align-items: flex-startÍ;
+
+            .product-name {
+              font-size: 20px;
+              font-weight: 100;
+            //   font-family: "IRANYekan";
+            }
+
+            li {
+              color: $MineShaft;
+              margin: 5px;
+              text-align: center;
+              font-size: 17px;
+
+              span {
+                margin-right: 7px;
+                color: #4a5568;
+              }
+            }
+          }
+        }
+      }
+
+      .title {
+        margin-top: 5px;
+        font-size: 17px;
+        text-align: center;
+        color: #4a5568;
+      }
+
+      .price-info-parent {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+        .total-price {
+          font-size: 19px;
+          color: $MineShaft;
+        }
+
+        .price-discount-parent {
+          display: flex;
+
+          .price {
+            margin: 10px 5px;
+            font-size: 19px;
+            font-weight: 500;
+          }
+
+          .discount {
+            margin: 10px 5px;
+            text-decoration: line-through;
+            text-decoration-color: $Niagara;
+            font-size: 19px;
+          }
+        }
+      }
+
+      .qty-parent {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex: 1;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 5px 10px;
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        margin: 0 20px;
+
+        .qty-right-minus {
+          display: flex;
+          flex: 0.33;
+          justify-content: center;
+          padding: 3px 0;
+          background-color: white;
+          padding: 5px 10px;
+          color: #0da487;
+          border-radius: 5px;
+        }
+
+        .input-number {
+          display: flex;
+          flex: 0.33;
+          width: 80px;
+          height: calc(30px + 5 * (100vw - 320px) / 3420);
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          text-align: center;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .qty-left-plus {
+          display: flex;
+          flex: 0.33;
+          justify-content: center;
+          padding: 3px 0;
+          background-color: white;
+          color: #0da487;
+          padding: 5px 10px;
+          border-radius: 5px;
+        }
+      }
+
+      .delete-icon-parent {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
