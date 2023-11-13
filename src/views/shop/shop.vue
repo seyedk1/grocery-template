@@ -2,9 +2,7 @@
   <div id="main-container">
     <HeaderSearch></HeaderSearch>
     <HeaderMenu></HeaderMenu>
-    <div class="header-shop-page-title">
-      <h2>فروشگاه</h2>
-    </div>
+    <PageHeader> فروشگاه</PageHeader>
 
     <div class="products-sale-parent">
       <div class="filter-parents">
