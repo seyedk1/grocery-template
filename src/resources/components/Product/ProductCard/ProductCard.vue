@@ -1,6 +1,9 @@
 <template>
-  <div id="product-card-main">
-    <div class="product-card"  :class="{ 'product-card-shop': $route.name === 'shop' }">
+  <div class="product-card-main" @click="navigateProductDetail(product)">
+    <div
+      class="product-card"
+      :class="{ 'product-card-shop': $route.name === 'shop' }"
+    >
       <div class="product-image-parent">
         <v-img
           height="100"
