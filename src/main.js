@@ -1,5 +1,5 @@
 import "./assets/main.css";
-// import "./assets/sass/main.scss"
+import "./assets/sass/style.scss";
 import "@mdi/font/css/materialdesignicons.min.css";
 
 // import "./resources";
@@ -9,6 +9,11 @@ import loadHomeSection from "./resources/components/HomeSection";
 import loadCategorySection from "./resources/components/CategorySection";
 import loadProduct from "./resources/components/Product";
 import loadFooter from "./resources/components/Footer";
+import loadPopularProducts from "./resources/components/PopularProducts";
+import loadCart from "./resources/components/Cart";
+import loadPageHeader from "./resources/components/PageHeader";
+import loadPayment from "./resources/components/Payment";
+import loadProfile from "./resources/components/Profile";
 
 import router from "./router";
 
@@ -21,12 +26,14 @@ import "vuetify/styles";
 import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
+// import function to register Swiper custom elements
+
+
 
 const vuetify = createVuetify({
   components,
   directives,
   ssr: true,
-  rtl:true
 });
 const app = createApp(App);
 
@@ -38,5 +45,10 @@ loadAdvertise(app);
 loadHeader(app);
 loadHomeSection(app);
 loadCategorySection(app);
-loadProduct(app)
-loadFooter(app)
+loadProduct(app);
+loadFooter(app);
+loadPopularProducts(app);
+loadCart(app);
+loadPageHeader(app);
+loadPayment(app);
+loadProfile(app);

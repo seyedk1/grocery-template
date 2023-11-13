@@ -1,7 +1,8 @@
-#product-card-main {
+.product-card-main {
   display: flex;
   flex: 0.1;
   margin: 10px;
+  cursor: pointer;
 
   .product-card-shop {
     background-color: #f8f8f8;

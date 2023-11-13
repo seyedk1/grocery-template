@@ -1,0 +1,18 @@
+#cart-container-main {
+  display: flex;
+  margin: 10px;
+  justify-content: space-evenly;
+
+  .cart-right-card-parent {
+    display: flex;
+    flex: 0.7;
+    margin-right: 10px;
+  }
+
+  .cart-left-card-parent {
+    display: flex;
+    flex: 0.2;
+    flex-direction: column;
+    margin: 0 10px;
+  }
+}

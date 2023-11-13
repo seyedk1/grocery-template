@@ -1,0 +1,105 @@
+@import url(/src/assets/fonts/IRANYekan/WebFonts/css/fontiran.css);
+#cart-bill-main {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+
+  .bill-title-parent {
+    display: flex;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 10px;
+
+    .bill-title {
+      font-family: "IRANYekan", sans-serif;
+      font-weight: bold;
+    }
+  }
+
+  .discount--form-parent {
+    display: flex;
+    flex-direction: column;
+
+    .discount-form-title-parent {
+      display: flex;
+      margin: 7px 0;
+    }
+
+    .discount-form-parent {
+      display: flex;
+
+      .input-discount-code {
+        flex: 0.9;
+      }
+
+      .submit-btn-parent {
+        display: flex;
+        flex: 0.2;
+
+        .submit-text-btn {
+          display: flex;
+          justify-content: center;
+          padding: 28px 15px;
+          text-align: center;
+          color: white;
+          font-size: 17px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+  }
+
+  .discount-details-parent {
+    display: flex;
+    flex-direction: column;
+
+    .total-cart-parent {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 5px;
+    }
+
+    .post-cost {
+      border-bottom: 1px solid #ececec;
+      padding-bottom: 10px;
+    }
+  }
+
+  .payment--back-shop-btn-parent {
+    display: flex;
+    flex-direction: column;
+
+    .payment-btn-parent {
+      display: flex;
+      flex-direction: column;
+      margin: 5px 0;
+
+      .payment-text-btn {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 19px;
+      }
+    }
+
+    .back-shop-btn-parent {
+      display: flex;
+      flex-direction: column;
+      margin: 5px 0;
+
+      .back-text-btn {
+        display: flex;
+        justify-content: center;
+        color: #222;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 19px;
+        // font-family: "IRANYekan", sans-serif;
+      }
+    }
+  }
+}

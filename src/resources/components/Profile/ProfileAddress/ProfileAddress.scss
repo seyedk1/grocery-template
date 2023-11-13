@@ -1,0 +1,74 @@
+@import "/src/assets/sass/variable";
+
+.address-cards-parent {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+
+  .address-card-parent {
+    display: flex;
+    flex: 0.33;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+
+    .card-title-parent {
+      display: flex;
+      justify-content: flex-start;
+
+      .card-title {
+        font-size: 15px;
+        color: $MineShaft;
+
+        .title-value {
+          color: $white;
+          background-color: $Niagara;
+          border-radius: 3px;
+          padding: 1px 6px;
+        }
+      }
+    }
+
+    .card-address-details-parent {
+      display: flex;
+      flex-direction: column;
+
+      .address-details {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+
+        .each-info {
+          color: $MineShaft;
+          font-size: 16px;
+
+          .each-info-value {
+            color: $RiverBed;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .edit-delete-parent {
+      display: flex;
+      margin: 10px 0;
+
+      .edit-delete-style {
+        background-color: $Alabaster;
+        border-radius: 5px;
+        padding: 1px 15px;
+        color: $MineShaft;
+        margin: 0 10px;
+        font-size: 16px;
+        font-weight: 600;
+
+        .btn-icon {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}

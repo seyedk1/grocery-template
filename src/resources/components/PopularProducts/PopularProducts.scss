@@ -1,0 +1,76 @@
+@import "src/assets/sass/variable";
+#popular-products-main {
+  display: flex;
+  flex: 0.8;
+  flex-direction: column;
+
+  .popular-products-background {
+    background-color: $Alabaster;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+
+    .header-popular-products-parent {
+      display: flex;
+      justify-content: flex-start;
+      margin: 5px;
+
+      .popular-products-header {
+        font-weight: bold;
+        border-bottom: 2px solid $Niagara;
+        margin: 15px;
+        padding-bottom: 5px;
+      }
+    }
+
+    .popular-products-list-parent {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+
+      .each-popular-product {
+        display: flex;
+        flex: 1;
+
+        .popular-product-image-parent {
+          display: flex;
+          flex: 0.4;
+          justify-content: center;
+          padding: 10px;
+        }
+
+        .popular-product-info-parent {
+          display: flex;
+          flex: 0.6;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          margin: 0 45px 0 20px;
+
+          &:not(:last-child) {
+            border-bottom: 1px dashed #c3c7cd;
+          }
+
+          .popular-product-name-parent {
+            display: flex;
+            justify-content: center;
+
+            .product-name {
+              font-weight: bold;
+            }
+          }
+
+          .popular-product-price-parent {
+            display: flex;
+            justify-content: center;
+
+            .product-price {
+              color: $Niagara;
+            }
+          }
+        }
+      }
+    }
+  }
+}

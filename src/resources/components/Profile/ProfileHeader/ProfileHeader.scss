@@ -1,0 +1,44 @@
+@import "/src/assets/sass/variable";
+
+.head-dashboard-parent {
+  display: flex;
+  justify-content: space-between;
+
+  .head-title-parent {
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+
+    .head-title {
+    }
+
+    .title-image-parent {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-top: 3px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 35%;
+        top: 10px;
+        background-color: $Niagara;
+      }
+
+      .title-image {
+        color: $Niagara;
+        margin-right: 3rem;
+        margin-left: auto;
+
+        .v-img__img--contain {
+          z-index: 1;
+          background-color: $Alabaster;
+          color: $Niagara;
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+}

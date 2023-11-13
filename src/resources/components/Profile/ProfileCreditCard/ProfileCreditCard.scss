@@ -1,0 +1,28 @@
+@import "/src/assets/sass/variable";
+
+.credit-cards-parent {
+  display: flex;
+  flex-wrap: wrap;
+
+  .credit-card-parent {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    color: $white;
+    background-color: #4b77a0;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0) 1px,
+        rgba(255, 255, 255, 0.03) 2px,
+        rgba(255, 255, 255, 0.04) 3px,
+        rgba(255, 255, 255, 0.05) 4px
+      ),
+      -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 40%, rgba(
+              255,
+              255,
+              255,
+              0.2
+            )
+            70%, rgba(255, 255, 255, 0) 90%);
+  }
+}

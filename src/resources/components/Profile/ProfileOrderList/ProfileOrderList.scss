@@ -1,0 +1,130 @@
+@import "/src/assets/sass/variable";
+
+.order-card-parent {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 10px 15px;
+
+  .icon-parent {
+    display: flex;
+    margin: 10px 0;
+
+    .icon-style {
+      color: $Niagara;
+      background-color: #eaf5f3;
+      border-radius: 100%;
+      padding: 10px;
+    }
+  }
+
+  .status--label-parent {
+    display: flex;
+
+    .status-parent {
+      display: flex;
+
+      .status-text {
+        color: $MineShaft;
+        font-size: 19px;
+      }
+    }
+
+    .status-label-parent {
+      display: flex;
+      margin: 0 10px;
+
+      .status-label {
+        color: $white;
+        padding: 5px;
+        border-radius: 7px;
+        background: -webkit-gradient(
+          linear,
+          right top,
+          left top,
+          from(#ff6b6b),
+          to(#ff4f4f)
+        );
+        background: linear-gradient(-90deg, #ff6b6b 0%, #ff4f4f 100%);
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .product-order-card-parent {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $Alabaster;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+
+    .product-image-parent {
+      display: flex;
+      flex: 0.2;
+      align-items: center;
+
+      .product {
+      }
+    }
+    .product-order-details-parent {
+      display: flex;
+      flex: 0.7;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .product-name-parent {
+        display: flex;
+        justify-content: flex-start;
+
+        .product-name {
+          color: $MineShaft;
+          font-weight: bold;
+        }
+      }
+
+      .product-more-detail-parent {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .product-more-detail {
+          color: $RiverBed;
+          font-size: 16px;
+        }
+      }
+
+      .product-ul-parent {
+        display: flex;
+        margin-top: 12px;
+
+        .product-details-list-parent {
+          display: flex;
+          flex-direction: column;
+
+          .each-row {
+            display: flex;
+            align-items: center;
+            color: $RiverBed;
+
+            .value {
+              display: flex;
+              align-items: center;
+              color: $MineShaft;
+              margin-right: 5px;
+
+              .v-rating {
+                .v-rating__wrapper {
+                  max-width: 10%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

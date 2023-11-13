@@ -1,0 +1,100 @@
+@import "/src/assets/sass/variable";
+
+.totally-info-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+
+  .gap {
+    margin: 10px 0;
+  }
+
+  .title-parent {
+    display: flex;
+
+    .title {
+      color: $MineShaft;
+      font-weight: bold;
+    }
+  }
+
+  .show-table--illustrator-parent {
+    display: flex;
+    flex: 1;
+
+    .table-parent {
+      display: flex;
+      flex: 0.6;
+
+      .table {
+        display: flex;
+        flex: 1;
+        padding: 10px 15px;
+
+        .table-body {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+
+          .each-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 0.2;
+            width: 50%;
+
+            .each-cel {
+              font-size: 19px;
+              color: $MineShaft;
+            }
+
+            .title-cel {
+              color: $RiverBed;
+            }
+          }
+        }
+      }
+    }
+
+    .illustrator-parent {
+      display: flex;
+      flex: 0.4;
+    }
+  }
+
+  .name--edit-button-parent {
+    display: flex;
+    justify-content: space-between;
+
+    .name {
+      color: #222;
+      font-size: 17px;
+    }
+
+    .edit-text-btn {
+      font-size: 16px;
+      padding: 0 15px;
+    }
+  }
+
+  .location-parent {
+    display: flex;
+
+    .icon-text-parent {
+      display: flex;
+      margin: 5px;
+      color: $RiverBed;
+
+      .icon-text {
+        font-size: 17px;
+      }
+      .space {
+        margin: 5px;
+      }
+    }
+  }
+}
